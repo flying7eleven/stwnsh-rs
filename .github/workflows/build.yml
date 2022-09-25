@@ -1,4 +1,4 @@
-name: stwnsh-rs (build)
+name: build
 
 on:
   push:
