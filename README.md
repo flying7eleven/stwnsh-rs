@@ -1,8 +1,5 @@
-# Achtsamkeit
-
-## Build docker image
-To build the backend container, use the following command:
-
-````shell
-docker buildx build -t achtsamkeit-backend:2022.9.19 -t achtsamkeit-backend:latest .
-````
+# stwnsh-rs
+Stwnsh is Welsh and can be translated with the word _hash_. This tool can be used to
+offline-generate the hash values  of password with different hash functions. It was
+mainly written for my own personal use and is nothing new. Just an easy and convenient
+way for doing those tasks with a single tool.
