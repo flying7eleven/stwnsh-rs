@@ -2,4 +2,5 @@
 /target
 /pkg
 /.docker_volumes
+*.pkg.tar.zst
 *.log
