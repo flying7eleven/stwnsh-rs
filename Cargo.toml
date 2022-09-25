@@ -9,4 +9,7 @@ readme = "README.md"
 license-file = "LICENSE.md"
 rust-version = "1.63"
 
-[dependencies]
+[dependencies.clap]
+version = "4.0.0-rc.2"
+default-features = false
+features = ["std", "derive"]
