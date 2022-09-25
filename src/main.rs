@@ -5,7 +5,7 @@ use clap::{Parser, Subcommand};
 struct Args {
     /// The algorithm which should be used for hashing.
     #[clap(subcommand)]
-    algorithm: Option<Algorithms>,
+    algorithm: Algorithms,
 }
 
 #[derive(Subcommand)]
@@ -34,7 +34,6 @@ fn main() {
 
     // based on the supplied algorithm, calculate and output the hash
     match &arguments.algorithm {
-        Some(Algorithms::Bcrypt { cost, input_text }) => println!("{}", hash_bcrypt(cost, input_text)),
-        None => {}
+        Algorithms::Bcrypt { cost, input_text } => println!("{}", hash_bcrypt(cost, input_text)),
     }
 }
