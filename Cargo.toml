@@ -12,7 +12,7 @@ rust-version = "1.63"
 [dependencies.clap]
 version = "4.0.0-rc.2"
 default-features = false
-features = ["std", "derive"]
+features = ["std", "derive", "help"]
 
 [dependencies.bcrypt]
 version = "0.13.0"
